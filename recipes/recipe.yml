@@ -9,7 +9,7 @@ modules:
   - type: dnf
     repos:
         copr:
-          - name: lionheartp/Hyprland
+          - lionheartp/Hyprland
     install:
       packages:
         - qemu-kvm
