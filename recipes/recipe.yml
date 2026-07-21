@@ -10,7 +10,6 @@ modules:
     repos:
         copr:
           - name: lionheartp/Hyprland
-            chroot: fedora-44-x86_64
     install:
       packages:
         - qemu-kvm
