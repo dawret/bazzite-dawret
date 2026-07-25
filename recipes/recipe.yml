@@ -24,7 +24,7 @@ modules:
         - waybar 
         - kitty
         - alacritty
-        - ghostty
+        - tailscale
 
   - type: systemd
     system:
