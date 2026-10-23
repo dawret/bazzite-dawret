@@ -21,10 +21,15 @@ modules:
 
         - hyprland
         - xdg-desktop-portal-hyprland
+        # Bazzite ships terra-xorg-x11-server-Xwayland, which doesn't provide
+        # xorg-x11-server-Xwayland(x86-64) required by the Hyprland copr.
+        # Swap it for Fedora's Xwayland (needs allow-erasing below).
+        - xorg-x11-server-Xwayland
         - waybar 
         - kitty
         - alacritty
         - tailscale
+      allow-erasing: true
 
   - type: systemd
     system:
