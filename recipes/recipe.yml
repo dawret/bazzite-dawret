@@ -10,6 +10,7 @@ modules:
     repos:
         copr:
           - lionheartp/Hyprland
+          - codifryed/CoolerControl
     install:
       packages:
         - qemu-kvm
@@ -29,10 +30,14 @@ modules:
         - kitty
         - alacritty
         - tailscale
+
+        - liquidctl
+        - coolercontrol
       allow-erasing: true
 
   - type: systemd
     system:
       enabled:
         - libvirtd.service
+        - coolercontrold.service
 
